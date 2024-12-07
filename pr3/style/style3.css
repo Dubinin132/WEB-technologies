@@ -1,0 +1,86 @@
+/* Основні стилі сторінки */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: url('imeg/backgroung.jpg') no-repeat center center fixed;
+    background-size: cover; /* Зображення займає всю площу */
+        display: flex; /* Використовується для центрування вмісту */
+    justify-content: center; /* Горизонтальне центрування */
+    align-items: center; /* Вертикальне центрування */
+    height: 100vh; /* Висота сторінки — вся висота вікна */
+}
+
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    background: #444;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Стилі кнопки */
+.button {
+    display: inline-block;
+    padding: 20px 50px; /* Збільшені відступи для більшої кнопки */
+    font-size: 20px; /* Збільшений шрифт */
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    border: 1px solid #0056b3;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+/* Ефекти при наведенні та натисканні */
+.button:hover {
+    background: linear-gradient(45deg, #3993f4, #003f7f);
+    color: #f0f0f0;
+    border-color: #a6c9ed;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.button:active {
+    transform: scale(0.98);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}

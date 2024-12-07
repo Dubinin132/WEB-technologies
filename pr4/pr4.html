@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link rel="stylesheet" href="style/style4.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="material-icons">menu</i>
+            </button>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube Logo" class="youtube-logo">
+            <span class="premium">Premium</span>
+        </div>
+        <div class="header-center">
+            <div class="search-bar">
+                <input type="text" placeholder="Пошук">
+                <button class="search-btn">🔍</button>
+            </div>
+        </div>
+        <div class="header-right">
+            <button class="icon-btn" aria-label="Create video">
+                <i class="material-icons">video_call</i>
+            </button>
+            <button class="icon-btn" aria-label="Apps">
+                <i class="material-icons">apps</i>
+            </button>
+            <button class="icon-btn" aria-label="Notifications">
+                <i class="material-icons">notifications</i>
+            </button>
+            <button class="icon-btn" aria-label="Account">
+                <i class="material-icons">account_circle</i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Категорії -->
+    <div class="categories">
+        <ul>
+            <li><span>Усі</span></li>
+            <li><span>Музика</span></li>
+            <li><span>Ігри</span></li>
+            <li><span>Новини</span></li>
+            <li><span>Наука</span></li>
+            <li><span>Фільми</span></li>
+            <li><span>Спорт</span></li>
+            <li><span>Технології</span></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li class="active"><i class="material-icons">home</i> Головна</li>
+                    <li><i class="material-icons">explore</i> YouTube Shorts</li>
+                    <li><i class="material-icons">subscriptions</i> Підписки</li>
+                    <li><i class="material-icons">library_music</i> YouTube Music</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><i class="material-icons">history</i> Історія</li>
+                    <li><i class="material-icons">play_circle</i> Ваші відео</li>
+                    <li><i class="material-icons">watch_later</i> Дивитися пізніше</li>
+                    <li><i class="material-icons">thumb_up</i> Вподобані відео</li>
+                </ul>
+            </nav>
+            <hr>
+            <h3>Підписки</h3>
+            <ul class="subscriptions">
+                <li class="subscription-item">
+                    <img src="https://yt3.ggpht.com/ytc/AIdro_nSBgBRWSgEJXh8AZDzHR3KiSkdc9Ly0Q8lfNhuqFJ6CYI=s88-c-k-c0x00ffffff-no-rj" alt="Pirate Software" class="subscription-avatar">
+                    <div class="subscription-details">
+                        <span class="subscription-name">Pirate Software</span>
+                    </div>
+                </li>
+                <li class="subscription-item">
+                    <img src="https://yt3.ggpht.com/igmnMDatcEqUM0FCHHP1kHGWlYE3hf6rILRrwjy12DldT4rP-awN_pzlE0iQefJJas2b96QHzag=s88-c-k-c0x00ffffff-no-rj" alt="ThePRJ" class="subscription-avatar">
+                    <div class="subscription-details">
+                        <span class="subscription-name">КіБЕРБЕЗ</span>
+                    </div>
+                </li>
+                <li class="subscription-item">
+                    <img src="https://yt3.ggpht.com/LYxRpxJCXPyEieaAc9Hh2SI-ChxKII1VkmPpstjwPSw82b64I5Z9PgunYE7PpwNmX3gUk8IqqA=s88-c-k-c0x00ffffff-no-rj" alt="Rozetka" class="subscription-avatar">
+                    <div class="subscription-details">
+                        <span class="subscription-name">My Cisco</span>
+                    </div>
+                </li>
+                <li class="subscription-item">
+                    <img src="https://yt3.ggpht.com/ytc/AIdro_mPFVsxROj1dOtTWc9iNBwDYV4z42Q8LPokBSewiW9pCSg=s88-c-k-c0x00ffffff-no-rj" alt="Алексей" class="subscription-avatar">
+                    <div class="subscription-details">
+                        <span class="subscription-name">Bro Code</span>
+                    </div>
+                </li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <section class="video-grid">
+                <!-- Відео з можливістю додавати зображення -->
+                <div class="video-card">
+                    <div class="thumbnail" style="background-image: url('path/to/thumbnail1.jpg');">
+                        <img src="https://i.ytimg.com/vi/gPUiYmYW2p4/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLB2rVu66Zyq_7yWvP-6eufY3BVnFw" alt="Image 1" class="overlay-image">
+                    </div>
+                    <div class="video-info">
+                        <h4>Ranma ½ - Opening 1</h4>
+                        <p>8 років тому</p>
+                    </div>
+                    <div class="channel-info">
+                        <img src="https://yt3.ggpht.com/0kyNalAD5jiBXGzVkS6LHYsZQX2IQDy8YyzaPuhv3ErVPpe9YHzidDht-z96Ph0vCbL5uI93=s88-c-k-c0x00ffffff-no-rj" alt="Channel 1" class="channel-avatar">
+                        <span>Tenjuro Kamado</span>
+                    </div>
+                </div>
+
+
+                <div class="video-card">
+                    <div class="thumbnail" style="background-image: url('path/to/thumbnail2.jpg');">
+                        <img src="https://i.ytimg.com/vi/NksDPZkjFZs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAZmxriPYpbG_s1sZDL55WtqCk0GA" alt="Image 2" class="overlay-image">
+                    </div>
+                    <div class="video-info">
+                        <h4>Stellar Blade - NieR:Automata DLC Launch Trailer | PS5 Games</h4>
+                        <p>2 тижні тому</p>
+                    </div>
+                    <div class="channel-info">
+                        <img src="https://yt3.ggpht.com/vIq4vVe_C7zq66KKHAtx89KagpDR1CuKkvgi96KtOaVgSTh67G3yJbTUkZ_o_ivUoG4Jxy9QkA=s176-c-k-c0x00ffffff-no-rj-mo" alt="Channel 2" class="channel-avatar">
+                        <span>PlayStation</span>
+                    </div>
+                </div>
+
+
+
+                <div class="video-card">
+                    <div class="thumbnail" style="background-image: url('path/to/thumbnail3.jpg');">
+                        <img src="https://i.ytimg.com/vi/9O1Eadve5po/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLC7AVWL8jAc1kBS4aSHJqXBXwEoVw" alt="Image 3" class="overlay-image">
+                    </div>
+                    <div class="video-info">
+                        <h4>Blackberry Classic: Unboxing & Review</h4>
+                        <p>9 років тому</p>
+                    </div>
+                    <div class="channel-info">
+                        <img src="https://yt3.ggpht.com/ytc/AIdro_liCTEUa2yD1lMM6dY2z9W1Y-MH99cITrWDQXkvrWpYGF4=s88-c-k-c0x00ffffff-no-rj" alt="Channel 3" class="channel-avatar">
+                        <span>TechGuru</span>
+                    </div>
+                </div>
+
+
+                <div class="video-card">
+                    <div class="thumbnail" style="background-image: url('path/to/thumbnail2.jpg');">
+                        <img src="https://i.ytimg.com/vi/8bZ0l2ahkbI/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBVByRFvpU14z8kpzjCHD5ZW3d_kA" alt="Image 2" class="overlay-image">
+                    </div>
+                    <div class="video-info">
+                        <h4>Такий самий... чи ні? Огляд ROG Zephyrus G16</h4>
+                        <p>2 дні тому</p>
+                    </div>
+                    <div class="channel-info">
+                        <img src="https://yt3.ggpht.com/7AFrhi_z0tdj3FJt5ZIeiY8vpC13qle9ZUWMTPNKDEdOqnQqtumgnrg2AuKiM2-S39tYhCiwBg=s88-c-k-c0x00ffffff-no-rj" alt="Channel 2" class="channel-avatar">
+                        <span>E-Katalog</span>
+                    </div>
+                </div>
+
+
+                <div class="video-card">
+                    <div class="thumbnail" style="background-image: url('path/to/thumbnail2.jpg');">
+                        <img src="https://i.ytimg.com/vi/EcPCu8VTIIs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAoOmw_MiqXZVRZsn8iUneJEKRgGQ" alt="Image 2" class="overlay-image">
+                    </div>
+                    <div class="video-info">
+                        <h4>Air Pro: Apple Ad Parody</h4>
+                        <p>9 місяців тому</p>
+                    </div>
+                    <div class="channel-info">
+                        <img src="https://yt3.ggpht.com/tA6wkm8DDz44xt-CVEmo9cd00ozCK7IWBfZBwUB7M4-yO7Q7k5PP0L8bvLKGP4zl1G-Bi1wbKA=s88-c-k-c0x00ffffff-no-rj" alt="Channel 2" class="channel-avatar">
+                        <span>SiliconFX</span>
+                    </div>
+                </div>
+
+
+
+                <div class="video-card">
+                    <div class="thumbnail" style="background-image: url('path/to/thumbnail2.jpg');">
+                        <img src="https://i.ytimg.com/vi/Lh9PQsT6kq8/hq720.jpg?sqp=-oaymwFBCNAFEJQDSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYACrgWKAgwIABABGH8gMigdMA8=&rs=AOn4CLDxkgZz-pL7pNKfoygrS-W1i21VRw" alt="Image 2" class="overlay-image">
+                    </div>
+                    <div class="video-info">
+                        <h4>Розділ 11. Налаштування Windows</h4>
+                        <p>9 днів тому</p>
+                    </div>
+                    <div class="channel-info">
+                        <img src="https://yt3.ggpht.com/LYxRpxJCXPyEieaAc9Hh2SI-ChxKII1VkmPpstjwPSw82b64I5Z9PgunYE7PpwNmX3gUk8IqqA=s88-c-k-c0x00ffffff-no-rj" alt="Channel 2" class="channel-avatar">
+                        <span>My Cisco</span>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="thumbnail" style="background-image: url('path/to/thumbnail2.jpg');">
+                        <img src="https://i.ytimg.com/vi/pxD7irLGexk/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAfxlOJ65rMgrzF5tInzh1soTU97Q" alt="Image 2" class="overlay-image">
+                    </div>
+                    <div class="video-info">
+                        <h4>910. FUNNY ENGLISH SIGNS 🪧 Explained (Part 1)</h4>
+                        <p>10 днів тому</p>
+                    </div>
+                    <div class="channel-info">
+                        <img src="https://yt3.ggpht.com/aJPsArjOGF_ah_b3zfdlYOprE2i5J--fpyD7jG_dyLNTOWyyRjzsZVIkQp_s3Lbd3Sxd21-l1g=s88-c-k-c0x00ffffff-no-rj" alt="Channel 2" class="channel-avatar">
+                        <span>Luke's English Podcast</span>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="thumbnail" style="background-image: url('path/to/thumbnail2.jpg');">
+                        <img src="https://i.ytimg.com/vi/5XEZR75oPcs/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCeEd7SteTMFqXd0ISNJejnObCPNQ" alt="Image 2" class="overlay-image">
+                    </div>
+                    <div class="video-info">
+                        <h4>What's Inside a Rattlesnake Rattle?</h4>
+                        <p>7 місяців тому</p>
+                    </div>
+                    <div class="channel-info">
+                        <img src="https://yt3.ggpht.com/rp_VELPBCD1xpy8M40iXj4VVqYMhlKer10R5GlSWOAHSO4u0e4CtBnQJMC0kBkJzR7RP9YXs=s88-c-k-c0x00ffffff-no-rj" alt="Channel 2" class="channel-avatar">
+                        <span>Odd Animal Specimens</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,290 @@
+/* Загальні стилі */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.youtube-logo {
+    height: 24px;
+}
+
+.premium {
+    font-size: 14px;
+    color: #c00;
+    margin-left: 10px;
+}
+
+header .search-bar {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 600px;
+    margin: 0 20px;
+}
+
+.search-bar input {
+    width: 90%;
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #e6e6e6;
+}
+
+/* Категорії */
+.categories {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    z-index: 999;
+}
+
+.categories ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.categories ul li {
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.categories ul li:hover {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.categories ul li span {
+    font-weight: bold;
+}
+
+/* Сайдбар */
+.sidebar {
+    position: fixed;
+    top: 120px;
+    left: 0;
+    width: 240px;
+    height: calc(100vh - 120px);
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+}
+
+.sidebar nav {
+    padding: 20px;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    padding: 10px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar nav ul li i {
+    margin-right: 10px;
+}
+
+.sidebar nav ul li:hover {
+    background-color: #f1f1f1;
+}
+
+.sidebar hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+/* Підписки */
+.subscriptions {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 10px 20px;  /* Додаємо margin-left для зміщення праворуч */
+}
+
+.subscriptions li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.subscriptions li img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.subscription-btn {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.subscription-btn:hover {
+    background-color: #e6e6e6;
+}
+
+/* Головний контент */
+.container {
+    display: flex;
+    margin-top: 180px;
+    margin-left: 240px;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.video-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.video-card .thumbnail {
+    position: relative;
+    background-color: #ccc;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+}
+
+.video-card .thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-info {
+    padding: 10px;
+}
+
+.video-info h4 {
+    font-size: 16px;
+    margin: 0 0 5px 0;
+}
+
+.video-info p {
+    font-size: 14px;
+    color: #777;
+}
+
+.channel-info {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.channel-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Адаптивність */
+@media screen and (max-width: 768px) {
+    .header .search-bar {
+        width: 100%;
+    }
+
+    .categories {
+        top: 100px;
+    }
+
+    .container {
+        margin-top: 220px;
+        margin-left: 0;
+    }
+
+    .sidebar {
+        width: 200px;
+    }
+
+    .video-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 10px;
+    }
+
+    .youtube-logo {
+        height: 20px;
+    }
+
+    .categories ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        display: none;
+    }
+}

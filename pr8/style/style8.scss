@@ -1,0 +1,65 @@
+// Змінні
+$primary-color: #1acde8;
+$secondary-color: #f9f9f9;
+$text-color: #ffffff;
+$font-family: 'Arial, sans-serif';
+$button-padding: 10px 20px;
+$button-radius: 5px;
+
+// Міксини
+@mixin button-styles($bg-color, $hover-color) {
+    background-color: $bg-color;
+    color: #fff;
+    padding: $button-padding;
+    border: none;
+    border-radius: $button-radius;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: $hover-color;
+
+    }
+}
+
+// Стилі
+body {
+    font-family: $font-family;
+    background: url('imeg/iPhone17.jpg') center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh; // Фіксуємо висоту для одного екрану
+}
+
+.header {
+    &__title {
+        color: $primary-color;
+        font-size: 2.5rem;
+        margin: 0;
+    }
+}
+
+.intro {
+    &__text {
+        color: $text-color;
+        font-size: 1.5rem;
+        margin: 20px 0;
+        text-shadow: 
+        -1px -1px 0 black, 
+         1px -1px 0 black, 
+        -1px  1px 0 black, 
+         1px  1px 0 black;
+        
+    }
+}
+
+.button-wrapper {
+    .button {
+        @include button-styles($primary-color, darken($primary-color, 10%));
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,158 @@
+/* Загальні стилі */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #87CEEB, #228B22);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Сцена */
+.scene {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Фон */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #87CEEB, #228B22);
+    animation: background-change 6s infinite;
+}
+
+@keyframes background-change {
+    0%, 50% {
+        background: linear-gradient(to bottom, #87CEEB, #228B22); /* Нормальний фон */
+    }
+    50%, 100% {
+        background: linear-gradient(to bottom, #1C1C1C, #8B0000); /* Вогняний фон */
+    }
+}
+
+/* Пікачу */
+.pikachu {
+    position: absolute;
+    bottom: 30%;
+    left: 10%;
+    animation: pikachu-move 6s infinite;
+}
+
+.pikachu img {
+    height: 150px;
+}
+
+.lightning {
+    position: absolute;
+    top: 0;
+    left: 80px;
+    width: 10px;
+    height: 150px;
+    background: transparent;
+    box-shadow: 0 0 20px yellow, 0 0 40px yellow;
+    opacity: 0;
+    animation: lightning-attack 2s infinite;
+    z-index: 5;
+}
+
+.lightning:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(45deg, yellow, transparent, yellow, transparent);
+    animation: lightning-strike 1s ease-in-out infinite;
+}
+
+/* Зигзагоподібна блискавка */
+@keyframes lightning-strike {
+    0% {
+        transform: translateX(0) translateY(0);
+        opacity: 0;
+    }
+    20% {
+        transform: translateX(10px) translateY(10px);
+        opacity: 1;
+    }
+    40% {
+        transform: translateX(-10px) translateY(-10px);
+        opacity: 1;
+    }
+    60% {
+        transform: translateX(15px) translateY(15px);
+        opacity: 1;
+    }
+    80% {
+        transform: translateX(-15px) translateY(-15px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0) translateY(0);
+        opacity: 0;
+    }
+}
+
+/* Чармандер */
+.charmander {
+    position: absolute;
+    bottom: 30%;
+    right: 10%;
+    animation: charmander-move 6s infinite;
+}
+
+.charmander img {
+    height: 150px;
+}
+
+.fire {
+    position: absolute;
+    bottom: 20px;
+    left: -40px;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, red, orange, yellow, transparent);
+    border-radius: 50%;
+    opacity: 0;
+    animation: fire-attack 6s infinite;
+}
+
+@keyframes fire-attack {
+    0%, 40%, 100% {
+        opacity: 0;
+        transform: scale(0.5) translateX(0);
+    }
+    50%, 70% {
+        opacity: 1;
+        transform: scale(1.2) translateX(-200px);
+    }
+}
+
+/* Анімація руху */
+@keyframes pikachu-move {
+    0%, 40%, 100% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes charmander-move {
+    0%, 90%, 100% {
+        transform: translateY(0);
+    }
+    70% {
+        transform: translateY(-20px);
+    }
+}
